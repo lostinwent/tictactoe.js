@@ -57,44 +57,40 @@ $(document).ready(function(){
     var value = $(this).text();
 
     if (gameTied()) {
-
       alert("GAME OVER!");
-
     } else {
-
       if (!(value == 'X' || value == 'O')) {
-
         if (playerOneTurn) {
-
           $(this).html("<p>X</p>");
           board[value - 1] = "X";
-
           if (gameWon("X")) {
             alert("Player 1 wins!");
           } else {
             switchTurn();
           }
-
-          console.log(board);
-
+          // console.log(board);
         } else {
-
           $(this).html("<p>O</p>");
           board[value - 1] = "O";
-
           if (gameWon("O")) {
+            // replace alerts?
             alert("Player 2 wins!");
           } else {
             switchTurn();
           }
-
-          console.log(board);
-
+          // console.log(board);
         }
       }
     }
-
   });
 
+
+  $('.styled-button-1').click(function() {
+    location.reload();
+  });
+
+  $(window).unload(function() {
+    location.reload();
+  });
 
 });

@@ -1,9 +1,25 @@
 body {
   text-align: center;
+  background-color: black;
+}
+
+@font-face {
+	font-family: "Naive Inline";
+	src: local(Naive Inline), url('font/La Goupil - NaiveInline-Bold') format('opentype');
 }
 
 body#board {
   margin: auto;
+}
+
+h1 {
+	color: #fe0080;
+	font: 100px "Naive Inline";
+}
+
+#mym {
+	color: #fe0080;
+	font: 40px "Naive Inline";
 }
 
 table {
@@ -13,11 +29,25 @@ table {
 }
 
 td {
-  height: 50px;
-  width: 80px;
-  border: solid black 1px;
-  border-radius: 1px;
-  font-size: 25px;
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  font: bold 40px "Naive Inline";
   text-align: center;
   color: black;
+  background-color: #fd2c80;
+  opacity: 0.88;
+}
+
+
+.styled-button-1 {
+  color:#333;
+  background-color:#fd2c80;
+  border-radius:5px;
+  border:none;
+  height:22px;
+  padding:4px 16px;
+  font: normal 700 12px 'Naive Inline';
+  margin-top: 10px;
+  text-align: center;
 }
