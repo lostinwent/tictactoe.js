@@ -12,19 +12,6 @@ div {
   display: block;
 }
 
-
-.header {
-  /*spacing!*/
-
-}
-
-.mainpage {
-
-}
-
-
-
-
 .alert-warning {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffdc72), color-stop(100%, #ffbf00));
   background-image: -webkit-linear-gradient(#ffdc72,#ffbf00);
