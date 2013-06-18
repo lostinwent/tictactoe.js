@@ -11,30 +11,30 @@ $(document).ready(function(){
   };
 
   var gameWon = function(mark) {
-    gameOver = false;
-    // row checks
+    result = false;
+    // rows
     if (board[0] == mark && board[1] == mark && board[2] == mark) {
-      gameOver = true;
-    } else if (board[4] == mark && board[5] == mark && board[6] == mark) {
-      gameOver = true;
-    } else if (board[7] == mark && board[8] == mark && board[9] == mark) {
-      gameOver = true;
-    // col checks
+      result = true;
+    } else if (board[3] == mark && board[4] == mark && board[5] == mark) {
+      result = true;
+    } else if (board[6] == mark && board[7] == mark && board[8] == mark) {
+      result = true;
+    // columns
+    } else if (board[0] == mark && board[3] == mark && board[6] == mark) {
+      result = true;
     } else if (board[1] == mark && board[4] == mark && board[7] == mark) {
-      gameOver = true;
+      result = true;
     } else if (board[2] == mark && board[5] == mark && board[8] == mark) {
-      gameOver = true;
-    } else if (board[3] == mark && board[6] == mark && board[9] == mark) {
-      gameOver = true;
-    // diag checks
-    } else if (board[3] == mark && board[5] == mark && board[7] == mark) {
-      gameOver = true;
-    } else if (board[1] == mark && board[5] == mark && board[9] == mark) {
-      gameOver = true;
+      result = true;
+    // diagonal
+    } else if (board[0] == mark && board[4] == mark && board[8] == mark) {
+      result = true;
+    } else if (board[2] == mark && board[4] == mark && board[6] == mark) {
+      result = true;
     } else {
-      gameOver = false;
+      result = false;
     }
-    return gameOver;
+    return result;
   };
 
   var gameTied = function() {
@@ -68,14 +68,26 @@ $(document).ready(function(){
 
           $(this).html("<p>X</p>");
           board[value - 1] = "X";
-          switchTurn();
+
+          if (gameWon("X")) {
+            alert("Player 1 wins!");
+          } else {
+            switchTurn();
+          }
+
           console.log(board);
 
         } else {
 
           $(this).html("<p>O</p>");
           board[value - 1] = "O";
-          switchTurn();
+
+          if (gameWon("O")) {
+            alert("Player 2 wins!");
+          } else {
+            switchTurn();
+          }
+
           console.log(board);
 
         }

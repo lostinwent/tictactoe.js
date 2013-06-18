@@ -1,6 +1,9 @@
 // var board =  [0, 1, 2
 //               3, 4, 5,
 //               6, 7, 8]
+// var board =  [1, 2, 3
+//               4, 5, 6,
+//               7, 8, 9]
 
 var gameWon = function(mark) {
   result = false;
@@ -33,22 +36,6 @@ var gameWon = function(mark) {
 
 
 // x winner on column
-var board = ["1", "2", "3", "4", "5", "6", "X", "X", "X"];
+var board = ["X", "2", "3", "X", "X", "6", "X", "X", "X"];
 console.log(gameWon("X"));
 
-
-// o winner on column
-// var board3 = ["1", "2", "O", "4", "5", "O", "7", "8", "O"];
-// console.log(gameWon("O"));
-
-
-
-// // x winner on row
-// var board4 = ["1", "2", "3", "4", "5", "6", "X", "X", "X"];
-// console.log(gameWon("X"));
-
-
-
-// // x winner diag
-// var board5 = ["X", "2", "3", "4", "X", "6", "7", "8", "X"];
-// console.log(gameWon("X"));
