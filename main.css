@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.container {
+	text-align: center;
+	width: 960px;
+	margin: 0px auto;
+}
+
+html { 
+  background: url(background-01.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+	font-family: "Naive Inline";
+	src: local(Naive Inline), url('font/La Goupil - NaiveInline-Bold') format('opentype');
+}
+
+body#board {
+  margin: auto;
+}
+
+h1 {
+	color: #fe0080;
+	font: 100px "Naive Inline";
+}
+
+#mym {
+	color: #fe0080;
+	font: 40px "Naive Inline";
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+}
+
+td {
+  height: 150px;
+  width: 150px;
+/*  border: 1px solid #fe0080;*/
+  border-radius: 5px;
+  font: bold 40px "Naive Inline";
+  text-align: center;
+  color: black;
+  background-color: #fd2c80;
+  opacity: 0.88;
+}
+
+.styled-button-1 {
+	color:#333;
+	background-color:#fd2c80;
+	border-radius:5px;
+	border:none;
+	height:22px;
+	padding:4px 16px;
+	font: normal 700 12px 'Naive Inline';
+	margin-top: 10px;
+	text-align: center;
+}
