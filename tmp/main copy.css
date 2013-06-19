@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+body#board {
+  margin: auto;
+}
+
+h1 {
+	color: #fe0080;
+	font-size: 100px;
+  font-family: "Naive Inline", Helvetica, Arial;
+}
+
+#mym {
+	color: #fe0080;
+  font-size: 100px;
+  font-family: "Naive Inline", Helvetica, Arial;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+}
+
+td {
+  height: 150px;
+  width: 150px;
+/*  border: 1px solid #fe0080;*/
+  border-radius: 5px;
+  font: bold 40px "Naive Inline";
+  text-align: center;
+  color: black;
+  background-color: #fd2c80;
+  opacity: 0.88;
+}

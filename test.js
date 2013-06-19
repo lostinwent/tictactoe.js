@@ -1,6 +1,12 @@
 // var board =  [0, 1, 2
 //               3, 4, 5,
 //               6, 7, 8]
+<<<<<<< HEAD
+=======
+// var board =  [1, 2, 3
+//               4, 5, 6,
+//               7, 8, 9]
+>>>>>>> upstream/master
 
 var gameWon = function(mark) {
   result = false;
@@ -33,6 +39,7 @@ var gameWon = function(mark) {
 
 
 // x winner on column
+<<<<<<< HEAD
 var board = ["1", "2", "3", "4", "5", "6", "X", "X", "X"];
 console.log(gameWon("X"));
 
@@ -52,3 +59,8 @@ console.log(gameWon("X"));
 // // x winner diag
 // var board5 = ["X", "2", "3", "4", "X", "6", "7", "8", "X"];
 // console.log(gameWon("X"));
+=======
+var board = ["X", "2", "3", "X", "X", "6", "X", "X", "X"];
+console.log(gameWon("X"));
+
+>>>>>>> upstream/master
